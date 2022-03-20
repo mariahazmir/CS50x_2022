@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table tablestriped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for own in owns %}
+            <tr>
+                <td class="text-start">{{ own.symbol }}</td>
+                <td class="text-end">{{ own.shares }}</td>
+                <td class="text-end">{{ own.price }}</td>
+                <td class="text-end">{{ own.time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}

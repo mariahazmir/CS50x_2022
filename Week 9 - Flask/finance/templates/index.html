@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Main
+{% endblock %}
+
+{% block main %}
+    <table class="table tablestriped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for own in owns %}
+            <tr>
+                <td class="text-start">{{ own.symbol }}</td>
+                <td class="text-start">{{ own.name }}</td>
+                <td class="text-end">{{ own.shares }}</td>
+                <td class="text-end">{{ own.price | usd }}</td>
+                <td class="text-end">{{ own.value | usd }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end">{{ balance }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Total</td>
+                <td class="border-0 text-end">{{ total }}</td>
+            </tr>
+{% endblock %}
