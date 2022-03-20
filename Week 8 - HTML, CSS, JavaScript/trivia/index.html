@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            // TODO: Add code to check answers to questions
+            // Run script once DOM is loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                // When correct answer is clicked,
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function(){
+                    // change background colour to green
+                    correct.style.backgroundColor = '#4AFD73';
+                    // and print "Correct!"
+                    document.querySelector('#feedback1').innerHTML = 'Correct!';
+                });
+                // When incorrect answer is clicked,
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        // change background colour to red
+                        incorrects[i].style.backgroundColor = '#FD4AD4';
+                        // and print "Incorrect!"
+                        document.querySelector('#feedback1').innerHTML = 'Incorrect!';
+                    });
+                }
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                    // When correct answer is typed in,
+                    if (input.value === 'Mickeys' || input.value === 'mickeys' || input.value === 'Mickey' || input.value === 'mickey') {
+                        // change background colour to green
+                        input.style.backgroundColor = '#4AFD73';
+                        // and print "Correct!"
+                        document.querySelector('#feedback2').innerHTML = 'Correct!';
+                    } else {
+                        // When correct answer is typed in, change background colour to red
+                        input.style.backgroundColor = '#FD4AD4';
+                        // and print "Incorrect!"
+                        document.querySelector('#feedback2').innerHTML = 'Incorrect!';
+                    }
+                });
+                });
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <div class="section2">
+                    <h2>Part 1: Multiple Choice </h2>
+                </div>
+                <div class="section3">
+                    <h3>
+                        <p>Question:</p>
+                        <p>What's the national animal of Scotland?</p>
+                    </h3>
+
+                    <!-- TODO: Add multiple choice question here -->
+                    <div class="row">
+                        <button class="incorrect">A blobfish</button>
+                        <button class="incorrect">An axolotl</button>
+                        <button class="correct"> A unicorn</button>
+                        <p class="font" id="feedback1"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section2">
+                    <h2>Part 2: Free Response</h2>
+                </div>
+                <div class="section3">
+                    <h3>
+                        <p>Question:</p>
+                        <p>What's the speed of a computer mouse measured in?</p>
+                    </h3>
+
+                    <!-- TODO: Add free response question here -->
+                    <div class="row">
+                    <p><input type="text"></input></p>
+                    <p><button id="check">Check answer!</button></p>
+                    <p class="font" id="feedback2"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

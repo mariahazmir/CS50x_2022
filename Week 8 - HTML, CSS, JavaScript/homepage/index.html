@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Welcome!</title>
+
+        <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let home = document.querySelector('.home');
+                home.addEventListener('click', function(){
+                    location.href='index.html';
+                });
+
+            let user = document.querySelector('.user');
+                user.addEventListener('click', function(){
+                    location.href='aboutme.html';
+                });
+
+            let picture = document.querySelector('.picture');
+                picture.addEventListener('click', function(){
+                    location.href='picture.html';
+                });
+
+            let music = document.querySelector('.music');
+                music.addEventListener('click', function(){
+                    location.href='music.html';
+                });
+
+        });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <div class="menu"><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button class="menubutton home"><img src="home.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton user"><img src="user.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton picture"><img src="picture.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton music"><img src="music-alt.svg" class="filter" width="30rem" height="30rem"/></button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Second group">
+                <button class="menubutton"><a href="music.html"><img src="angle-left.svg" class="filter" width="30rem" height="30rem"/></a></button>
+                <button class="menubutton"><img src="home.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton"><a href="aboutme.html"><img src="angle-right.svg" class="filter" width="30rem" height="30rem"/></a></button>
+            </div>
+        </div></div>
+
+        <div class="main">
+
+            <div class="container-fluid">
+                <div class="row justify-content-center g-5">
+
+                    <div class="col-md-auto align-self-end">
+                        <h1>
+                            Welcome to<br>
+                            my page <i>!</i><br>
+                        </h1>
+                        <hr>
+                        <h2>
+                            As part of CS50's Problem Set 8, <br> here's my homepage.<br><i>Take a tour!</i><br>
+                        </h2>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <img src="tree.gif" width="326rem"/>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="gap"></div>
+
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-auto preview">
+                        <div>
+                            <a href="aboutme.html">
+                                <div class="preview">
+                                    <img src="coffee.gif"class="previewimg">
+                                    <div class="overlay">
+                                        <div class="previewtext">About me!</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto preview">
+                        <div>
+                            <a href="picture.html">
+                                <div class="preview">
+                                    <img src="dish.gif"class="previewimg">
+                                    <div class="overlay">
+                                        <div class="previewtext">Random pics!</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto preview">
+                        <div>
+                            <a href="music.html">
+                                <div class="preview">
+                                    <img src="tea.gif"class="previewimg">
+                                    <div class="overlay">
+                                        <div class="previewtext">Music recs!</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h4>
+            *All illustrations/artworksthroughout this page are from <a href="https://www.deviantart.com/seerlight" target="_blank">Seerlight</a>
+            </h4>
+
+        </div>
+
+    </body>
+    
+</html>

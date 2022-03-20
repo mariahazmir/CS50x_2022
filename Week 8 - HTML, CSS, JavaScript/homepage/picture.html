@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Random pics!</title>
+
+        <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            let home = document.querySelector('.home');
+                home.addEventListener('click', function(){
+                    location.href='index.html';
+                });
+
+            let user = document.querySelector('.user');
+                user.addEventListener('click', function(){
+                    location.href='aboutme.html';
+                });
+
+            let picture = document.querySelector('.picture');
+                picture.addEventListener('click', function(){
+                    location.href='picture.html';
+                });
+
+            let music = document.querySelector('.music');
+                music.addEventListener('click', function(){
+                    location.href='music.html';
+                });
+
+        });
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="menu"><div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button class="menubutton home"><img src="home.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton user"><img src="user.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton picture"><img src="picture.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton music"><img src="music-alt.svg" class="filter" width="30rem" height="30rem"/></button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Second group">
+                <button class="menubutton"><a href="aboutme.html"><img src="angle-left.svg" class="filter" width="30rem" height="30rem"/></a></button>
+                <button class="menubutton"><img src="picture.svg" class="filter" width="30rem" height="30rem"/></button>
+                <button class="menubutton"><a href="music.html"><img src="angle-right.svg" class="filter" width="30rem" height="30rem"/></a></button>
+            </div>
+        </div></div>
+
+        <div class="main">
+
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col">
+                        <div class="container-lg my-3">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                                    <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                                </ol>
+
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img1.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img2.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img3.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img4.jpg" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img5.jpg" class="d-block w-100">
+                                    </div>
+                                </div>
+
+                                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-auto align-self-end">
+                        <h5>I take <br> photos too!</h5>
+                        <hr>
+                        <h2> They're not the best <br> but they're surely...<br> something :/ </h2>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    
+</html>
