@@ -97,4 +97,7 @@
 
 ㅤ
 > ### Week 10: Emoji
+>
+>> **Final Project:**
+>> * in progress
 ㅤ
