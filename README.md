@@ -94,10 +94,3 @@
 >
 >> **Problem Set:**  
 >> * [finance](https://github.com/mariahazmir/CS50x_2022/tree/main/Week%209%20-%20Flask/finance)
-
-ㅤ
-> ### Week 10: Emoji
->
->> **Final Project:**
->> * in progress
-ㅤ
